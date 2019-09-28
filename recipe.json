@@ -1,0 +1,34 @@
+[
+  {
+    "recipe_id" : 0,
+    "name_of_recipe" : "肉じゃが",
+    "price" : 1000,
+    "hash-tag" : ["豚肉", "母の味", "人参"],
+    "image" : "./img/nikujaga.png",
+    "person_id" : 1
+  },
+  {
+    "recipe_id" : 1,
+    "name_of_recipe" : "シチュー",
+    "price" : 1000,
+    "hash-tag" : ["豚肉", "母の味", "飲み物"],
+    "image" : "./img/shityu.png",
+    "person_id" : 1
+  },
+  {
+    "recipe_id" : 2,
+    "name_of_recipe" : "そうめん",
+    "price" : 1000,
+    "hash-tag" : ["麺", "簡単"],
+    "image" : "./img/soumen.png",
+    "person_id" : 0
+  },
+  {
+    "recipe_id" : 3,
+    "name_of_recipe" : "パスタ",
+    "price" : 1000,
+    "hash-tag" : ["麺", "イタリアン"],
+    "image" : "./img/pasta.png",
+    "person_id" : 1
+  }
+]
