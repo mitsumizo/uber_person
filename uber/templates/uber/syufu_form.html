@@ -3,23 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>ハッカソン</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="stylesheet.css">-->
+<!--    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
   </head>
   <body>
+      <header>
+          <div class="container">
+            <div class="header-left">
+              <a class="header-logo" href="#">★</a>
+              <input>
+            </div>
+            <div class="header-right">
+              <input>
+              <a class="signin-for-syufu" href="{% url 'post_new' %}">主婦サインイン</a>
+            </div>
+          </div>
+      </header>
+    {% for syufu in syufus %}
+        <div>
+            <p>published: {{ syufu.id_member }}</p>
+            <h2><a href="">{{ syufu.shufu_name }}</a></h2>
+            <p>{{ syufu.email|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
 ​
-<!--    <header>-->
-<!--      <div class="container">-->
-<!--        <div class="header-left">-->
-<!--          <a class="header-logo" href="#">★</a>-->
-<!--          <input>-->
-<!--        </div>-->
-<!--        <div class="header-right">-->
-<!--          <input>-->
-<!--          <a class="signin" href="#">サインイン</a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </header>-->
+
 
 <!--      <footer>-->
 <!--     <div class="footer-top">-->
