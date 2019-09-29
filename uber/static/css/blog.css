@@ -1,5 +1,9 @@
 .page-header {
-    background-color: #C25100;
+    background: -webkit-linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+    background: -moz-linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+    background: -ms-linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+    background: -o-linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+    background: linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -18,9 +22,6 @@ h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
-/*.date {*/
-/*    color: #828282;*/
-/*}*/
 
 .post-form textarea, .post-form input {
     width: 100%;
@@ -30,18 +31,26 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
-    color: #000000;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .btn-square-shadow {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #668ad8;/*ボタン色*/
-  color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    background: -webkit-linear-gradient(45deg, #193258 10%, #85d8ce 90%);
+    background: -moz-linear-gradient(45deg, #193258 10%, #85d8ce 90%);
+    background: -ms-linear-gradient(45deg, #193258 10%, #85d8ce 90%);
+    background: -o-linear-gradient(45deg, #193258 10%, #85d8ce 90%);
+    background: linear-gradient(45deg, #193258 10%, #85d8ce 90%);
+    color: #FFF;
+    border-bottom: solid 4px rgba(0, 0, 0, 1);
+    border-radius: 3px;
+    margin: 10px;
+    float: left;
 }
 .btn-square-shadow:active {
   /*ボタンを押したとき*/
@@ -49,4 +58,137 @@ h1, h2, h3, h4 {
   transform: translateY(4px);/*下に動く*/
   box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
   border-bottom: none;
+}
+
+
+body {
+  font-family :'Hiragino Kaku Gothic ProN W3', sans-serif;
+    z-index: 0;
+      }
+  ​   .page-header {
+     background: -webkit-linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+     background: -moz-linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+     background: -ms-linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+     background: -o-linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+     background: linear-gradient(45deg, #08780e 10%, #85d8ce 90%);
+     margin-top: 0;
+     padding: 20px 20px 20px 40px;
+  }
+
+
+
+.login_form {
+  width :60%;
+  margin :100px auto;
+  background: #EEEEEE;
+  height: 800px;
+}
+
+.login_form h2{
+  text-align: center;
+  padding: 20px;
+}
+
+ul li{
+  padding: 50px;
+  list-style: none;
+}
+
+.col-sm-7{
+   height: 20px;
+}
+
+.question{
+  float: left;
+}
+
+.btn{
+  width: 30%;
+  height: 45px;
+  margin-left: 29%;
+}
+
+.hoge_btn_blue{
+  background: -webkit-linear-gradient(45deg, #26486e 20%, #85d8ce 80%);
+  background: -moz-linear-gradient(45deg, #26486e 20%, #85d8ce 60%);
+  background: -ms-linear-gradient(45deg, #26486e 20%, #85d8ce 0%);
+  background: -o-linear-gradient(45deg, #26486e 20%, #85d8ce 60%);
+  background: linear-gradient(45deg, #26486e 20%, #85d8ce 60%);
+  color:black;
+  margin : 5px 10px;
+  border:none;
+  position:relative;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+  height:40px;
+  width : 120px;
+  font-size : 15px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+    float: left;
+}
+.hoge_btn_blue:hover{
+  background:#fff;
+  color:#26486e;
+}
+.hoge_btn_blue:before,
+.hoge_btn_blue:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #26486e;
+  transition:400ms ease all;
+}
+.hoge_btn_blue:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+.hoge_btn_blue:hover:before,
+.hoge_btn_blue:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1
+}
+
+.wrappaer {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    top : 100px;
+    left : 10%;
+    color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 110, 0.9);
+    display: none;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.fix{
+    position: fixed;
+    top: 30px;
+    left : 0;
+    padding: 0;
+    width: 100%;
+    margin-left: 1%;
+    z-index: 3;
 }

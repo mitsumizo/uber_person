@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../../static/css/blog.css">
+  </head>
+​
+
+​
+​
+      <body>
+​
+        <div class="top-menu">
+           <div class="page-header">
+               <h1><a href="/">Food 2.0</a></h1>
+           </div>
+       </div>
+​
+​
+        <div class="login_form">
+          <h2>ユーザー登録画面</h2>
+          <form action="/uber/login/" method="post">
+          <div class="user_name">
+          <ul class="question">
+            <li>名前</li>
+            <li>メールアドレス</li>
+            <li>電話番号</li>
+            <li>住所</li>
+          </ul>
+​
+          <ul>
+
+​
+               <li><label class="col-sm-7"><textarea name="user_name" cols="40" rows="1" maxlength="20" required id="id_user_name">
+</textarea></label></li>
+​
+
+​
+               <li><label class="col-sm-7"><input type="email" name="user_email" maxlength="254" required id="id_user_email"></label></li>
+​
+
+​
+               <li><label class="col-sm-7"><input type="text" name="user_phone" value="0" cols="40" rows="4" required id="id_user_phone"></label></li>
+​
+
+​
+               <li><label class="col-sm-7"><textarea name="user_adress" cols="40" rows="4" maxlength="30" required id="id_user_adress">
+</textarea></label></li>
+​
+
+               <input type="submit" class="btn btn-primary" value="新規登録する">
+          </ul>
+          </div>
+         </form>
+        </div>
+​
+      </body>
+    </html>

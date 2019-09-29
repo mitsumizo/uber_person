@@ -9,9 +9,10 @@
       <header>
           <div class="top-menu">
             <div class="page-header">
-                <h1><a href="/">Uber主婦</a></h1>
+                <h1 style="font-size: 35px"><a href="/">Food 2.0</a></h1>
                 <div class="header-right" style="position: absolute; top: 50px; right: 40px">
-                    <a class="signin-for-syufu btn-square-shadow" href="{% url 'login_syufu' %}" style="display: block">主婦サインイン</a>
+                    <a class="signin-for-syufu hoge_btn_blue" href="{% url 'login_syufu' %}" style="display: block">主婦サインイン</a>
+                    <a class="signin-for-syufu hoge_btn_blue" href="{% url 'Form_User' %}" style="display: block">Userサインイン</a>
                 </div>
             </div>
         </div>
@@ -19,12 +20,15 @@
           </div>
       </header>
     {% for food in recipis %}
-        <div style="text-align:center; float: left; margin: 50px; border: solid 3px #4f4f4f; width: 400px; height: 400px;">
-            <h1>{{ food.recipi_id }} {{ food.title }}</h1>
-            <img src="https://cdn.pixabay.com/photo/2017/08/11/00/32/main-course-2629258_1280.jpg" width="200px" height="200px">
-            <h2>{{ food.description }}</h2>
+      <a href="{% url 'detail_nikujaga' %}">
+        <div style="text-align:center; float: left; margin: 50px; border: solid 3px #4f4f4f; width: 300px; height: 400px;">
+            <h2>{{ food.recipi_id }} {{ food.title }}</h2>
+            <img src="{{ food.url }}" width="250px" height="200px">
+
             <p>1人前{{ food.price|linebreaksbr }}円</p>
+            <p>H.Sさん</p>
         </div>
+      </a>
     {% endfor %}
 ​
 

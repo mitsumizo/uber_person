@@ -1,0 +1,47 @@
+{% extends 'uber/base.html' %}
+
+{% block content %}
+    <h1>{{ post.title }}</h1>
+    <img src="http://www.kikkoman.co.jp/homecook/search/recipe/img/00005151.jpg" width="100%" height="500px">
+    <a href="#">#手料理</a>
+    <a href="#">#豚肉</a>
+    <a href="#">#じゃがいも</a>
+    <p>{{ post.description }}</p>
+    <h1 style="position: absolute; top: 50px; right: -250px">一人前{{ post.price }}円</h1>
+    <button type="button" id="hoge" style="width:100px; heigh:50px;position: absolute; top:140px; right: -101px;">購入</button>
+    <div id="overlay"></div>
+    <div class="wrappaer fix">
+      <h2>配達の詳細</h2>
+      <ul class="checkList">
+        <form class=""  method="post">
+          <li>住所<p class="detail_info">福岡市中央区天神5丁目1-15天神ロイヤルハイツ702</p></li>
+          <li>配達時刻<p class="detail_info">11時</p></li>
+          <li>個数<p class="detail_info">3個</p></li>
+          <li>お支払い金額<p class="detail_info">4000円</p></li>
+        </form>
+      </ul>
+    </div>
+
+{% endblock %}
+
+
+<!--      <div class="footer-right">-->
+<!--        <ul>-->
+<!--         <li><a href="#">★について</a></li>-->
+<!--         <li><a href="#">ブログを読む</a></li>-->
+<!--         <li><a href="#">登録しては配達を開始する</a></li>-->
+<!--         <li><a href="#">加盟会社として登録する</a></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--      <div class="footer-right">-->
+<!--        <ul>-->
+<!--         <li><a href="#">問い合わせる</a></li>-->
+<!--         <li><a href="#">よくある質問を読む</a></li>-->
+<!--         <li><a href="#">すべての都市を表示</a></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--     </div>-->
+<!--    </footer>-->
+<!--​-->
+<!--  </body>-->
+<!--</html>-->
