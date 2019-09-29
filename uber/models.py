@@ -1,19 +1,21 @@
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
+from django import forms
 
 
 # Create your models here.
-class PostSyufu(models.Model):
-    id_member = models.CharField(max_length=10, primary_key=True)
+class SyufuAccounts(models.Model):
+    # id_member = models.CharField(max_length=10, primary_key=True)
     shufu_name = models.CharField(max_length=20)
     email = models.EmailField()
+    # password = forms.CharField(widget=forms.PasswordInput)
 
     def publish(self):
         self.save()
 
     def __str__(self):
-        return self.id_member
+        return self.shufu_name
 
 
 class Recipi(models.Model):
@@ -22,7 +24,7 @@ class Recipi(models.Model):
     title = models.CharField(max_length=20)
     description = models.TextField()
     price = models.IntegerField()
-    person_id = models.ForeignKey('PostSyufu', on_delete=models.CASCADE)
+    person_id = models.ForeignKey('SyufuAccounts', on_delete=models.CASCADE)
 
 
 class Post_user(models.Model):

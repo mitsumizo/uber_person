@@ -3,7 +3,8 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.Post_Shufu, name='Post_Shufu'),
-    path('/syufu/login', views.syufu_login, name='syufu_login'),
-    path('/syufu/new', views.syufu_sign_up, name='syufu_sign_up')
+    path('', views.Top_Page, name='Top_Page'),
+    path('syufu/login', views.login_syufu, name='login_syufu'),
+    path('syufu/new', views.syufu_sign_up, name='syufu_sign_up'),
+    path('detail/<int:pk>/', views.account_detail, name='account_detail'),
 ]

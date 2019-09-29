@@ -1,15 +1,14 @@
 from django import forms
-from .models import PostSyufu
+from .models import SyufuAccounts
 
 
-class SyufuLogin(forms.ModelForm):
-
+class Login(forms.ModelForm):
     class Meta:
-        model = PostSyufu
+        model = SyufuAccounts
         fields = ('shufu_name', 'email')
 
 
-class SyfuSignUp(forms.ModelForm):
+class SignUp(forms.ModelForm):
     class Meta:
-        model = PostSyufu
-        fields = ('id_member', 'shufu_name', 'email')
+        model = SyufuAccounts
+        fields = ('shufu_name', 'email')
